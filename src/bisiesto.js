@@ -1,5 +1,13 @@
-function generarBisiesto(numero){
-    return "Bisiesto";
+function generarBisiesto(year){
+    if(year % 400 == 0)
+        {
+          year="Bisiesto"
+        }
+        else
+        {
+            year="No bisiesto"
+        }
+    return year+"";
   }
   
   export default generarBisiesto;
