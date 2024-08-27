@@ -1,15 +1,13 @@
-import sumar from "./sumador";
+import generarBisiesto from "./bisiesto.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const anioInput = document.querySelector("#anio");
+const form = document.querySelector("#bisiesto-form");
+const resultadoDiv = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+    const anio = Number.parseInt(anioInput.value);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+    resultadoDiv.innerHTML = "<p>" + generarBisiesto(anio) + "</p>";
 });
