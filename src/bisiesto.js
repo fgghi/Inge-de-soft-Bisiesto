@@ -1,9 +1,9 @@
-function generarBisiesto(year) {
-  if (year % 400 == 0) {
+function generarBisiesto(año) {
+  if (año % 400 == 0) {
       return "Bisiesto";
-  } else if (year % 100 == 0) {
+  } else if (año % 100 == 0) {
       return "No bisiesto";
-  } else if (year % 4 == 0) {
+  } else if (año % 4 == 0) {
       return "Bisiesto";
   } else {
       return "No bisiesto";
@@ -11,4 +11,3 @@ function generarBisiesto(year) {
 }
 
 export default generarBisiesto;
-
