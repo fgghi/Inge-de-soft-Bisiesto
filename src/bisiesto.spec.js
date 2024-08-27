@@ -16,4 +16,13 @@ it("generar no bisiesto", () => {
 it("generar no bisiesto", () => {
     expect(generarBisiesto(1900)).toEqual("No bisiesto");
 });
+it("generar no bisiesto", () => {
+    expect(generarBisiesto(2008)).toEqual("Bisiesto");
+});
+it("generar no bisiesto", () => {
+    expect(generarBisiesto(2012)).toEqual("Bisiesto");
+});
+it("generar no bisiesto", () => {
+    expect(generarBisiesto(2016)).toEqual("Bisiesto");
+});
 });
